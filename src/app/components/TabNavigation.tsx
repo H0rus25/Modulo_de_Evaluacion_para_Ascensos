@@ -1,4 +1,4 @@
-import { Users, ClipboardList, FileBarChart, FolderOpen } from 'lucide-react';
+import { Users, ClipboardList, FileBarChart, FolderOpen, UserPlus } from 'lucide-react';
 
 interface TabNavigationProps {
   activeTab: string;
@@ -7,6 +7,7 @@ interface TabNavigationProps {
 
 const tabs = [
   { id: 'employees', label: 'Lista de Empleados', icon: Users },
+  { id: 'entry', label: 'Ingreso de Datos', icon: UserPlus },
   { id: 'documents', label: 'Documentos de Empleados', icon: FolderOpen },
   { id: 'evaluation', label: 'Evaluación de Competencias', icon: ClipboardList },
   { id: 'results', label: 'Análisis de Resultados', icon: FileBarChart },

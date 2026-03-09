@@ -5,6 +5,7 @@ import { EvaluationForm } from './components/EvaluationForm';
 import { WorkersList } from './components/WorkersList';
 import { ResultsAnalysis } from './components/ResultsAnalysis';
 import { DocumentManagement } from './components/DocumentManagement';
+import { EmployeeDataEntry } from './components/EmployeeDataEntry';
 import { TabNavigation } from './components/TabNavigation';
 import { Footer } from './components/Footer';
 
@@ -16,6 +17,9 @@ export default function App() {
     switch (activeTab) {
       case 'employees':
         return <WorkersList />;
+      
+      case 'entry':
+        return <EmployeeDataEntry />;
       
       case 'documents':
         return <DocumentManagement />;
